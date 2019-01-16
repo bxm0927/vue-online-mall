@@ -16,8 +16,7 @@
 ## Build Setup
 
 ``` bash
-# init project
-# vue-cli 2
+# use vue-cli 2 init project
 vue init webpack#1.1.3 vue-online-mall
 
 # install dependencies
