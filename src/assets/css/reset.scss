@@ -1,0 +1,88 @@
+/*
+ * reset.css
+ * @Reference:
+ *             1. Reset CSS: https://meyerweb.com/eric/tools/css/reset/
+ *             2. Normalize.css: https://github.com/necolas/normalize.css
+ * @Idea:
+ *             1. 适应中文，基于最新主流浏览器
+ *             2. reset 的目的不是清除浏览器的默认样式，这仅是部分工作。清除和重置是紧密不可分的。
+ *             3. reset 的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。
+ * @Author: baixiaoming
+ * @Date: 2019-01-13 17:56:48
+ * @Last Modified by: baixiaoming
+ * @Last Modified time: 2019-01-13 19:54:43
+ */
+
+/* Document */
+html {
+    width: 100%;
+    height: 100%;
+    /* Prevent adjustments of font size after orientation changes in iOS. */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 1226px;
+    color: #333;
+    background-color: #f0f2f5;
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Remove the margin and padding in all browsers. */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre,
+dl, dt, dd, ul, ol, li, form, fieldset, lengend, button,
+input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, main,
+footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+/* Text-level semantics */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+small {
+    /* Add the correct font size in all browsers. */
+    font-size: 80%;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+img {
+    /* Remove the border on images inside links in IE 10. */
+    border-style: none;
+    border: 0;
+}
+ol, ul {
+    list-style: none;
+}
+b, strong {
+    font-weight: bolder;
+}
+legend {
+    color: #000;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+pre, code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}

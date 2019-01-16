@@ -1,14 +1,34 @@
-.DS_Store
+# node
 node_modules/
-dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+
+# build
+/dist/
 
 # Editor directories and files
-.idea
 .vscode
+.idea
+/idea/
+.settings/
+.project
+.classpath
+*.ipr
+*.iml
+*.iws
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
+
+# system
+.DS_Store
+Thumbs.db
+
+*.tmp
+*.log
+*.cache
+*.diff
+*.patch
