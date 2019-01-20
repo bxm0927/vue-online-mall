@@ -1,0 +1,206 @@
+{
+    "getUserInfo": {
+        "username": "baixiaoming"
+    },
+    "newsList": [
+        {
+            "id": 1,
+            "title": "新闻条目1新闻条目1新闻条目1新闻条目1",
+            "url": "http://starcraft.com"
+        },
+        {
+            "id": 2,
+            "title": "新闻条目2新闻条目2新闻条目2新闻条目2",
+            "url": "http://warcraft.com"
+        },
+        {
+            "id": 3,
+            "title": "新闻条3新闻条3新闻条3",
+            "url": "http://overwatch.com"
+        },
+        {
+            "id": 4,
+            "title": "新闻条4广告发布",
+            "url": "http://hearstone.com"
+        },
+        {
+            "id": 5,
+            "title": "Lorem ipsum dolor sit amet.",
+            "url": "http://hearstone.com"
+        },
+        {
+            "id": 6,
+            "title": "Lorem ipsum dolor sit amet.",
+            "url": "http://hearstone.com"
+        },
+        {
+            "id": 7,
+            "title": "Lorem ipsum dolor sit amet.",
+            "url": "http://hearstone.com"
+        },
+        {
+            "id": 8,
+            "title": "Lorem ipsum dolor sit amet.",
+            "url": "http://hearstone.com"
+        },
+        {
+            "id": 9,
+            "title": "Lorem ipsum dolor sit amet.",
+            "url": "http://hearstone.com"
+        },
+        {
+            "id": 10,
+            "title": "Lorem ipsum dolor sit amet.",
+            "url": "http://hearstone.com"
+        }
+    ],
+    "productList": [
+        {
+            "title": "PC产品",
+            "list": [
+                {
+                    "name": "数据统计",
+                    "url": "http://starcraft.com",
+                    "hot": false
+                },
+                {
+                    "name": "数据预测",
+                    "url": "http://warcraft.com",
+                    "hot": true
+                },
+                {
+                    "name": "流量分析",
+                    "url": "http://overwatch.com",
+                    "hot": false
+                },
+                {
+                    "name": "广告发布",
+                    "url": "http://hearstone.com",
+                    "hot": false
+                }
+            ]
+        },
+        {
+            "title": "手机应用类",
+            "list": [
+                {
+                    "name": "91助手",
+                    "url": "http://weixin.com",
+                    "hot": false
+                },
+                {
+                    "name": "产品助手",
+                    "url": "http://twitter.com",
+                    "hot": true
+                },
+                {
+                    "name": "智能地图",
+                    "url": "http://maps.com",
+                    "hot": false
+                },
+                {
+                    "name": "团队语音",
+                    "url": "http://phone.com",
+                    "hot": false
+                }
+            ]
+        }
+    ],
+    "slideList": [
+        {
+            "src": "https://raw.githubusercontent.com/bxm0927/picture-link/master/markdown-note/2019-1-17slideShow%20(1).jpg",
+            "title": "xxx1",
+            "href": "/detail/analysis"
+        },
+        {
+            "src": "https://raw.githubusercontent.com/bxm0927/picture-link/master/markdown-note/2019-1-17slideShow%20(2).jpg",
+            "title": "xxx2",
+            "href": "/detail/count"
+        },
+        {
+            "src": "https://raw.githubusercontent.com/bxm0927/picture-link/master/markdown-note/2019-1-17slideShow%20(3).jpg",
+            "title": "xxx3",
+            "href": "/"
+        },
+        {
+            "src": "https://raw.githubusercontent.com/bxm0927/picture-link/master/markdown-note/2019-1-17slideShow%20(4).jpg",
+            "title": "xxx4",
+            "href": "/detail/forecast"
+        }
+    ],
+    "boardList": [
+        {
+            "title": "开放产品",
+            "description": "开放产品是一款开放产品",
+            "id": "car",
+            "toKey": "analysis",
+            "saleout": false,
+            "img": "https://raw.githubusercontent.com/bxm0927/picture-link/master/markdown-note/2019-1-17%20(1).png"
+        },
+        {
+            "title": "品牌营销",
+            "description": "品牌营销帮助你的产品更好地找到定位",
+            "id": "earth",
+            "toKey": "count",
+            "saleout": false,
+            "img": "https://raw.githubusercontent.com/bxm0927/picture-link/master/markdown-note/2019-1-17%20(2).png"
+        },
+        {
+            "title": "使命必达",
+            "description": "使命必达快速迭代永远保持最前端的速度",
+            "id": "loud",
+            "toKey": "forecast",
+            "saleout": true,
+            "img": "https://raw.githubusercontent.com/bxm0927/picture-link/master/markdown-note/2019-1-17%20(3).png"
+        },
+        {
+            "title": "勇攀高峰",
+            "description": "帮你勇闯高峰，到达事业的顶峰",
+            "id": "hill",
+            "toKey": "publish",
+            "saleout": false,
+            "img": "https://raw.githubusercontent.com/bxm0927/picture-link/master/markdown-note/2019-1-17%20(4).png"
+        }
+    ],
+    "login": {
+        "username": "yudongdong",
+        "userId": 123123
+    },
+    "getPrice": {
+        "amount": 678
+    },
+    "createOrder": {
+        "orderId": "6djk979"
+    },
+    "getOrderList": {
+        "list": [
+            {
+                "orderId": "ddj123",
+                "product": "数据统计",
+                "version": "高级版",
+                "period": "1年",
+                "buyNum": 2,
+                "date": "2016-10-10",
+                "amount": "500元"
+            },
+            {
+                "orderId": "yuj583",
+                "product": "流量分析",
+                "version": "户外版",
+                "period": "3个月",
+                "buyNum": 1,
+                "date": "2016-5-2",
+                "amount": "2200元"
+            },
+            {
+                "orderId": "pmd201",
+                "product": "广告发布",
+                "version": "商铺版",
+                "period": "3年",
+                "buyNum": 12,
+                "date": "2016-8-3",
+                "amount": "7890元"
+            }
+        ]
+    }
+}

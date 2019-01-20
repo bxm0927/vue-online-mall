@@ -2,7 +2,7 @@
     <div id="app">
         <header class="app-header">
             <div class="app-header-inner">
-                <router-link :to="{path: '/'}" class="logo">
+                <router-link :to="{ path: '/' }" class="logo">
                     <img src="./assets/logo.png">
                 </router-link>
 

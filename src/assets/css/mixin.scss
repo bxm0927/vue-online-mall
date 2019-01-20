@@ -1,0 +1,19 @@
+/*
+ * SCSS Mixins
+ * @Author: baixiaoming
+ * @Date: 2019-01-17 00:04:23
+ * @Last Modified by:   baixiaoming
+ * @Last Modified time: 2019-01-17 00:04:23
+ */
+
+// 文本溢出省略号显示(一行)
+// display: inline-block; max-width: 70%;
+@mixin ellipsis() {
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
