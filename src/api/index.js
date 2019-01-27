@@ -2,11 +2,21 @@
  * API requests
  * @Author: baixiaoming
  * @Date: 2019-01-12 21:00:52
- * @Last Modified by: baixiaoming
- * @Last Modified time: 2019-01-20 13:54:38
+ * @Last Modified by: xiaoming.bai
+ * @Last Modified time: 2019-01-27 18:36:33
  */
 
 import axios from 'axios'
+
+/**
+ * 登录
+ */
+export const login = () => axios.get('/mockApi/login')
+
+/**
+ * 获取用户信息
+ */
+export const getUserInfo = () => axios.get('/mockApi/userInfo')
 
 /**
  * 获取“全部产品”数据

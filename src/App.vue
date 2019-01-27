@@ -8,31 +8,58 @@
 
                 <div class="header-nav">
                     <ul class="nav-list">
-                        <li @click="showDialog('isShowLogin')">登录</li>
-                        <li class="nav-pile">|</li>
-                        <li @click="showDialog('isShowReg')">注册</li>
-                        <li class="nav-pile">|</li>
+                        <template v-if="username">
+                            <li>{{ username }}</li>
+                            <li class="nav-pile">|</li>
+                            <li>退出</li>
+                            <li class="nav-pile">|</li>
+                        </template>
+
+                        <template v-else>
+                            <li @click="showDialog('isShowLogin')">登录</li>
+                            <li class="nav-pile">|</li>
+                            <li @click="showDialog('isShowReg')">注册</li>
+                            <li class="nav-pile">|</li>
+                        </template>
+
                         <li @click="showDialog('isShowAbout')">关于</li>
                     </ul>
                 </div>
             </div>
         </header>
 
-        <div class="app-content">
+        <main class="app-content">
             <keep-alive>
                 <router-view></router-view>
             </keep-alive>
-        </div>
+        </main>
 
         <footer class="app-footer">
             <p>© 2016 fishenal MIT</p>
         </footer>
+
+        <base-dialog v-if="isShowLogin" @close="hideDialog('isShowLogin')">
+            <login-form @has-login="hasLogin" @error="loginError"></login-form>
+        </base-dialog>
+
+        <base-dialog v-if="isShowReg" @close="hideDialog('isShowReg')">
+            <h2>注册</h2>
+        </base-dialog>
+
+        <base-dialog v-if="isShowAbout" @close="hideDialog('isShowAbout')">
+            <h2>关于我们</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam veniam enim, architecto sed quaerat consequatur id animi debitis provident dolore impedit assumenda earum, iusto voluptas velit rerum aliquam soluta voluptatem quas, quidem ipsum! Vero numquam consequatur ullam adipisci. In ad dolores dolorum quam adipisci consectetur aperiam eveniet, cupiditate tenetur veritatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam veniam enim, architecto sed quaerat consequatur id animi debitis provident dolore impedit assumenda earum, iusto voluptas velit rerum aliquam soluta voluptatem quas, quidem ipsum! Vero numquam consequatur ullam adipisci. In ad dolores dolorum quam adipisci consectetur aperiam eveniet, cupiditate tenetur veritatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam veniam enim, architecto sed quaerat consequatur id animi debitis provident dolore impedit assumenda earum, iusto voluptas velit rerum aliquam soluta voluptatem quas, quidem ipsum! Vero numquam consequatur ullam adipisci. In ad dolores dolorum quam adipisci consectetur aperiam eveniet, cupiditate tenetur veritatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam veniam enim, architecto sed quaerat consequatur id animi debitis provident dolore impedit assumenda earum, iusto voluptas velit rerum aliquam soluta voluptatem quas, quidem ipsum! Vero numquam consequatur ullam adipisci. In ad dolores dolorum quam adipisci consectetur aperiam eveniet, cupiditate tenetur veritatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam veniam enim, architecto sed quaerat consequatur id animi debitis provident dolore impedit assumenda earum, iusto voluptas velit rerum aliquam soluta voluptatem quas, quidem ipsum! Vero numquam consequatur ullam adipisci. In ad dolores dolorum quam adipisci consectetur aperiam eveniet, cupiditate tenetur veritatis?</p>
+        </base-dialog>
     </div>
 </template>
 
 <script>
-    // import ThisDialog from './components/Dialog'
-    // import LoginForm from './parts/LoginForm'
+    import BaseDialog from "./components/base/BaseDialog.vue";
+    import LoginForm from "./components/LoginForm.vue";
 
     export default {
         name: "App",
@@ -40,7 +67,9 @@
             return {
                 isShowAbout: false,
                 isShowLogin: false,
-                isShowReg: false
+                isShowReg: false,
+
+                username: ""
             };
         },
         methods: {
@@ -49,11 +78,18 @@
             },
             hideDialog(param) {
                 this[param] = false;
-            }
+            },
+            hasLogin(data) {
+                console.log("data: ", data);
+                this.username = data.username;
+
+                this.hideDialog('isShowLogin')
+            },
+            loginError() {}
         },
         components: {
-            // ThisDialog,
-            // LoginForm
+            BaseDialog,
+            LoginForm,
         }
     };
 </script>

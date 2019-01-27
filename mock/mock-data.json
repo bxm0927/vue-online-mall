@@ -1,5 +1,5 @@
 {
-    "getUserInfo": {
+    "userInfo": {
         "username": "baixiaoming"
     },
     "newsList": [
@@ -163,8 +163,8 @@
         }
     ],
     "login": {
-        "username": "yudongdong",
-        "userId": 123123
+        "userId": 123123,
+        "username": "baixiaoming"
     },
     "getPrice": {
         "amount": 678
