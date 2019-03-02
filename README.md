@@ -4,6 +4,8 @@
 
 慕课网实战课程地址：http://coding.imooc.com/class/91.html
 
+我的演示：http://144.34.220.239:8080（搬瓦工服务器）
+
 ## 技术栈
 
 - Node.js
@@ -33,6 +35,18 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## 部署
+
+``` bash
+cd ~/vue-online-mall
+
+git pull
+
+cnpm i
+
+pm2 start prod.server.js
+```
 
 ## 功能模块
 
