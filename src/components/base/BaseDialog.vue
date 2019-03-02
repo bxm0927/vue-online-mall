@@ -1,8 +1,3 @@
-<!--
-    基础弹窗组件，通过 slot 插槽传入内容
-    props: isShow
-    events: 'close'
--->
 <template>
     <div class="dialog-wrapper">
         <div class="dialog-cover" @click="close"></div>
