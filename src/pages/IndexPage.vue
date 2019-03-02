@@ -43,7 +43,7 @@
 </template>
 
 <script>
-    import SwiperSlide from "../components/SwiperSlide";
+    import SwiperSlide from "@/components/SwiperSlide";
     import { getProductList, getNewsList, getSlideList, getBoardList } from "@/api";
 
     export default {

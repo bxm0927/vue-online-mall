@@ -86,10 +86,10 @@
 </template>
 
 <script>
-    import BaseSelecte from "../../components/base/BaseSelecte.vue";
-    import BaseChooser from "../../components/base/BaseChooser.vue";
-    import BaseChooserMult from "../../components/base/BaseChooserMult.vue";
-    import BaseCounter from "../../components/base/BaseCounter.vue";
+    import BaseSelecte from "@/components/base/BaseSelecte.vue";
+    import BaseChooser from "@/components/base/BaseChooser.vue";
+    import BaseChooserMult from "@/components/base/BaseChooserMult.vue";
+    import BaseCounter from "@/components/base/BaseCounter.vue";
 
     export default {
         data() {
